@@ -40,7 +40,28 @@ student = student / 3; */
 
 // ⁡⁢⁣⁣augmented assigned operators ⁡⁢⁣⁣examples⁡
 // example: += , -= , *= , /= , **= , %=;
-students += 1;
+/* students += 1; */
+/* students -= 1; */
+/* students *= 1; */
+/* students /= 1; */
+/* students %= 2; */
+/* students **= 2;*/
 
-console.log(students);
+// ⁡⁢⁢⁢increment operator and decrement operator⁡
+
+/* students++; */
+/* students--; */
+
+/* console.log(students); */
+
+/* 
+ ⁡⁣⁢⁢operator precedence 
+ 1. parenthesis ()
+ 2. exponents (**)
+ 3. multiplication (*) and division (/) and modulo 
+ 4. addition (+) and subtraction (-)⁡
+ */
+/* let result = 6 / 2 ** 7 ; */
+console.log(result);
+
 

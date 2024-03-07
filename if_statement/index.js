@@ -16,24 +16,25 @@ else if (age < 18) {
 } */
 
 const myText = document.getElementById("myText");
-const myButton = document.getElementById("myButton");
+const mySubmit = document.getElementById("mySubmit");
 const resultElement = document.getElementById("resultElement");
 let age;
-myButton.onClick = function(){
+mySubmit.onclick = function(){
+  
   age = Number(myText.value);
-    if (age >= 100) {
-      resultElement.textContent =`You are too old to enter this site.`;
-    }
-    else if (age == 0) {
-      resultElement.textContent =`You are too young to enter this site.`;
-    }
-    else if (age >= 18) {
-      resultElement.textContent =`You can enter this site now.`;
-    }
-    else if (age < 0) {
-      resultElement.textContent =`You are not a human.`;
-    }
-    else {
-      resultElement.textContent =`You can only this site enter when your age crosses 18.`;
-    }
+  if (age >= 100) {
+    resultElement.textContent ="You are too old to enter this site.";
+  }
+  else if (age == 0) {
+    resultElement.textContent ="You are too young to enter this site.";
+  }
+  else if (age >= 18) {
+    resultElement.textContent ="You can enter this site now.";
+  }
+  else if (age < 0) {
+    resultElement.textContent ="You are not a human.";
+  }
+  else {
+    resultElement.textContent ="You can only this site enter when your age crosses 18.";
+  }
 }

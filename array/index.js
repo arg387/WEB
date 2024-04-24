@@ -23,12 +23,31 @@ console.log(fruits[3]); */
 let index = fruits.indexOf("pear");
 console.log(numOfFruits);
 console.log(index); */
-
-/* for (let i = 0; i < fruits.length; i++){
+//////////////////////////////////////
+// ⁡⁣⁢⁣printing all the elements of an array using for loop.⁡
+/* 
+for (let i = 0; i < fruits.length; i++){
   console.log(fruits[i]);
   
 } */
 fruits.sort().reverse();
-for (let fruit of fruits){
-  console. log(fruit);
-}
+// ⁡⁣⁢⁣for sorting and reversing the array these two methods are used.⁡
+
+/* for (let fruit of fruits){
+  console.log(fruit);
+} */
+
+//////////////////////////////////
+// ⁡⁣⁣⁢To print all the array elements in a webpage, you can use the following code:⁡
+let paragraph = document.createElement("p");
+// ⁡⁣⁢⁣creates a new paragraph element .⁡ ⁡⁣⁢⁣here p is the tag name of html.⁡
+
+paragraph.textContent = fruits.join(", ");
+
+// ⁡⁣⁢⁣sets the text content of the paragraph element to the elements of the fruits array, separated by commas. The join() method is used to convert the array into a string, with each element separated by a specified string (in this case, a comma followed by a space).⁡
+
+document.body.appendChild(paragraph);
+// ⁡⁣⁢⁣appends the paragraph element to the body of the webpage.⁡
+
+
+

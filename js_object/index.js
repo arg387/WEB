@@ -22,7 +22,8 @@ const person2 = {
   sayHello: function(){console.log(`I am ${this.name}!`)},
  /*  eat :()=>{console.log(`I eat ${this.favFood}.`)}, */
   
-  // ⁡⁣⁢⁣arrow function does not work with this.
+  // arrow function does not work with this.
+  
   
   eat :()=>{console.log(`I eat ${person2.favFood}.`)},
 

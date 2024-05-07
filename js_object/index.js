@@ -8,8 +8,9 @@ const person1 = {
   lastName : "Squarepants",
   age : 30,
   isEmployed : true,
+  favFood : "Hamburger",
   sayHello: function(){console.log(`I am ${this.name}!`)},
-  eat :()=>{console.log(`I eat rice.`)},
+  eat :function(){console.log(`I eat ${this.favFood}.`)},
 
 }
 const person2 = {
@@ -17,8 +18,13 @@ const person2 = {
   lastName : "Dallas",
   age : 32,
   isEmployed: false,
+  favFood : "Fish",
   sayHello: function(){console.log(`I am ${this.name}!`)},
-  eat :()=>{console.log(`I eat fish.`)},
+ /*  eat :()=>{console.log(`I eat ${this.favFood}.`)}, */
+  
+  // ⁡⁣⁢⁣arrow function does not work with this.
+  
+  eat :()=>{console.log(`I eat ${person2.favFood}.`)},
 
 }
 
@@ -38,4 +44,4 @@ person2.sayHello();
 person1.eat();
 person2.eat();
 
-//⁡⁣⁣⁢ methods are functions that a object can perform. ⁡
+//⁡⁣⁣⁢ methods are functions that a object can perform. ⁡⁣⁣⁢eat,sayHello are the methods here.⁡

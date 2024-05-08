@@ -24,3 +24,4 @@ product3.displayProduct();
 const total = product1.calculateTotal(salesTax);
 console.log(`The total cost of ${product1.name} is $${total.toFixed(2)}`);
 
+

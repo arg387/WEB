@@ -26,8 +26,59 @@ console.log(arr);
 
 let colors = ["red", "green", "yellow","orange","dark red","purple"];
 
+// use of rest parameter example 
+
 let [color1, color2, color3, ...extraColors] = colors;
 console.log(color1);
 console.log(color2);
 console.log(color3);
 console.log(extraColors);
+
+// ---------------- example 4 --------------------
+// Extract value from objects
+
+const person3 = {
+  Name: "Spongebob",
+  lastName: "squarepants",
+  age: 20,
+  job: "Plumber",
+
+}
+const person4 = {
+  Name: "Patrick",
+  lastName: "squarepant",
+  age: 23,
+
+
+}
+const {Name,lastName,age,job= "Unemployed"} = person4;
+console.log(Name);
+console.log(lastName);
+console.log(age);
+console.log(job);
+
+///////////////////////////
+
+// ---------------- example 5 --------------------
+// Destructure in function parameters
+
+// to remove undefined we used default value here if job property is given then default value will not be used.
+function displayPerson({Name,lastName,age,job= "Unemployed"}){
+  console.log(`name: ${Name} ${lastName}`);
+  console.log(`age: ${age}`);
+  console.log(`job: ${job}`);}
+const person1 = {
+  Name: "Spongebob",
+  lastName: "squarepants",
+  age: 29,
+  job: "Plumber",
+
+}
+const person2 = {
+  Name: "Patrick",
+  lastName: "squarepant",
+  age: 23,
+
+
+}
+displayPerson(person1);

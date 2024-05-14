@@ -1,0 +1,63 @@
+/* fr = fractional unit
+ 1fr means each column should take even amount of space. 4 = the number of columns for grid elements.  */
+ body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+ }
+#calculator{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 600px;
+  max-height: 745px ;
+  overflow: hidden;
+  box-shadow: 10px 5px 5px rgb(115, 139, 152);
+
+}
+#display{
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  font-size: 5rem;
+  border: none;
+  background-color: hsl(0, 9%, 91%);
+}
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+ padding: 15px 45px 20px;
+}
+
+
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(315, 50%, 43%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+button:hover{
+  background-color: hsl(300, 39%, 68%);
+}
+button:active{
+  background-color: hsl(300, 39%, 80%);
+}
+.operator-Btn{
+  background-color: hsl(35, 93%, 51%);
+}
+.operator-Btn:hover{
+  background-color: hsl(35, 100%, 65%);
+}
+.operator-Btn:active{
+  background-color: hsl(35, 100%, 80%);
+}

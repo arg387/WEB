@@ -39,4 +39,5 @@ const jsonPeople = `[{
 console.log(parsedData); */
 ////////////////////////////////////////////////
 // fetch returns a promise
-fetch("people.json").then(response => response.json()).then(values => values.forEach(value => console.log(value.isEmployed))).catch(error => console.error(error));
+fetch("people.json").then(response => response.json()).then(values => values.forEach(value => console.log(value.isEmployed))).catch(error => console.error(error)); 
+
